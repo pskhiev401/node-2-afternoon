@@ -1,11 +1,8 @@
-drop table if exists products;
-
-CREATE TABLE products (
-    product_id SERIAL PRIMARY KEY NOT NULL,
-    name varchar(40) NOT NULL,
-    description varchar(80) NOT NULL,
-    price int NOT NULL,
-    image_url text NOT NULL
+CREATE TABLE products
+(
+  product_id SERIAL PRIMARY KEY NOT NULL,
+  name varchar(40) NOT NULL,
+  description varchar(80) NOT NULL,
+  price integer NOT NULL,
+  img_url text
 );
-
--- added manually via postico
